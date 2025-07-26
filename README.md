@@ -1,10 +1,8 @@
 # IC GoldHoney – Moroccan Honey E-commerce
 
-Welcome to **IC GoldHoney**, a modern, responsive e-commerce web app for discovering and purchasing premium, authentic Moroccan honey. This project is designed for clarity, simplicity, and a great user experience across all devices.
+Welcome to **IC GoldHoney**, your trusted source for premium Moroccan honey. Our e-commerce platform offers a seamless shopping experience for discovering and purchasing authentic Moroccan honey varieties.
 
----
-
-## 🌟 What Can Users Do?
+## What Can Users Do?
 
 - **Browse Products:** Explore a curated collection of Moroccan honey varieties, each with detailed descriptions, images, and prices.
 - **Product Details:** View in-depth information about each honey type, including origin, weight, and customer reviews.
@@ -15,9 +13,7 @@ Welcome to **IC GoldHoney**, a modern, responsive e-commerce web app for discove
 - **FAQ & Support:** Find answers to common questions and contact customer support directly.
 - **Responsive Design:** Enjoy a smooth experience on mobile, tablet, and desktop.
 
----
-
-## 🛒 Main Features
+## Main Features
 
 - **Modern UI:** Clean, accessible, and visually appealing interface.
 - **Cart & Favourites:** Persistent cart and favourites using browser storage.
@@ -25,14 +21,11 @@ Welcome to **IC GoldHoney**, a modern, responsive e-commerce web app for discove
 - **Contact & Live Chat:** Contact form and live chat for customer support.
 - **Sustainability:** Information about sustainable sourcing and local Moroccan beekeepers.
 - **Order Summary:** Clear breakdown of subtotal, discounts, shipping, and total.
-- **Promo Codes:** Example codes: `HONEY10`, `WELCOME20`.
 
----
+## Technologies Used
 
-## 🛠️ Technologies Used
-
-- **Framework:** [Next.js](https://nextjs.org/) (React-based)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/) (with custom configuration)
+- **Framework:** Next.js (React-based)
+- **Styling:** Tailwind CSS (with custom configuration)
 - **UI Components:** Radix UI, custom components in `/components/ui/`
 - **State Management:** React hooks, Context API
 - **Type Checking:** TypeScript
@@ -42,9 +35,7 @@ Welcome to **IC GoldHoney**, a modern, responsive e-commerce web app for discove
 - **Carousel:** Embla Carousel
 - **Other:** PostCSS, Tailwind CSS Animate
 
----
-
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (v18 or higher recommended)
@@ -78,9 +69,7 @@ Welcome to **IC GoldHoney**, a modern, responsive e-commerce web app for discove
 4. **Open your browser:**
    Visit [http://localhost:3000](http://localhost:3000) to view the app.
 
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── app/                # Main app pages (shop, cart, about, contact, faq, reviews, etc.)
@@ -106,18 +95,14 @@ Welcome to **IC GoldHoney**, a modern, responsive e-commerce web app for discove
 └── ...
 ```
 
----
-
-## 📦 Available Scripts
+## Available Scripts
 
 - `npm run dev` / `pnpm dev` – Start the development server
 - `npm run build` / `pnpm build` – Build for production
 - `npm run start` / `pnpm start` – Start the production server
 - `npm run lint` – Lint the codebase
 
----
-
-## 💡 Developer Notes
+## Developer Notes
 
 - **Responsive Design:** All components are mobile-friendly and adapt to different screen sizes.
 - **Code Style:** Follows standard ESLint/Prettier rules for clean, readable code.
@@ -127,23 +112,17 @@ Welcome to **IC GoldHoney**, a modern, responsive e-commerce web app for discove
 - **Error Handling:** User-friendly error messages and validation for forms.
 - **Sustainability:** The app highlights sustainable sourcing and supports local Moroccan beekeepers.
 
----
-
-## 🙋 FAQ & Support
+## FAQ & Support
 
 - Visit the [FAQ page](http://localhost:3000/faq) for common questions.
 - Use the [Contact page](http://localhost:3000/contact) for support or business inquiries.
 
----
-
-## 🖼️ Credits & Assets
+## Credits & Assets
 
 - Product and brand images are in `/public/images/`.
 - Icons from [Lucide](https://lucide.dev/).
 - UI components inspired by [Radix UI](https://www.radix-ui.com/).
 
----
+## License
 
-## 📜 License
-
-This project is for portfolio and educational purposes. Please contact the author for commercial use or collaboration. 
+IC GoldHoney is a registered trademark. All rights reserved. Unauthorized reproduction or distribution is prohibited.
