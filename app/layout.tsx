@@ -13,7 +13,11 @@ export const metadata: Metadata = {
   description:
     "Discover the finest natural Moroccan honey from IC GoldHoney. Pure, organic, and sustainably sourced from the Atlas Mountains.",
   keywords: "moroccan honey, natural honey, organic honey, atlas mountains honey, IC GoldHoney",
-  generator: 'v0.dev'
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/favicon.svg',
+    shortcut: '/favicon.svg'
+  }
 }
 
 export default function RootLayout({
