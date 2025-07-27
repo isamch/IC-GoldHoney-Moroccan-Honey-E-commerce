@@ -1,4 +1,18 @@
-export const products = [
+export interface Product {
+  id: string;
+  name: string;
+  price: number;
+  image: string;
+  description: string;
+  weight: string;
+  origin: string;
+  category?: string;
+  inStock?: boolean;
+  rating?: number;
+  reviews?: number;
+}
+
+export const products: Product[] = [
   {
     id: "1",
     name: "Atlas Mountain Wildflower Honey",
@@ -29,7 +43,7 @@ export const products = [
     id: "3",
     name: "Eucalyptus Honey",
     price: 28.99,
-    image: "http://ashevillebeecharmer.com/wp-content/uploads/wildflower-honey-w-comb-1.jpg",
+    image: "https://ashevillebeecharmer.com/wp-content/uploads/wildflower-honey-w-comb-1.jpg",
     description: "Refreshing eucalyptus honey with natural antiseptic properties. By IC GoldHoney.",
     weight: "500g",
     origin: "Middle Atlas",
@@ -68,7 +82,7 @@ export const products = [
     id: "6",
     name: "Lavender Honey",
     price: 29.99,
-    image: "http://ashevillebeecharmer.com/wp-content/uploads/wildflower-honey-w-comb-1.jpg",
+    image: "https://ashevillebeecharmer.com/wp-content/uploads/wildflower-honey-w-comb-1.jpg",
     description: "Delicate lavender honey with a subtle floral aroma and calming properties. By IC GoldHoney.",
     weight: "500g",
     origin: "Middle Atlas",
@@ -82,7 +96,7 @@ export const products = [
     name: "Moroccan Honey",
     description: "Pure Moroccan honey harvested from the Atlas Mountains. Rich flavor with floral notes.",
     price: 29.99,
-    image: "moroccan-honey.jpg",
+    image: "/images/wildflower-honey.jpg",
     category: "Honey",
     origin: "Atlas Mountains",
     weight: "500g",
@@ -91,55 +105,28 @@ export const products = [
     reviews: 123
   },
   {
-    id: "2",
+    id: "8",
     name: "Sahara Honey",
     description: "Unique honey from the Sahara desert region. Distinctive taste with a touch of desert herbs.",
     price: 34.99,
-    image: "sahara-honey.jpg",
+    image: "/images/honey-dripping.jpg",
     category: "Honey",
     origin: "Sahara Desert",
-    weight: "500g",
-    inStock: true,
-    rating: 4.7,
-    reviews: 89
-  },
-  {
-    id: "3",
-    name: "Argan Honey",
-    description: "Premium honey made from argan flowers. Rich in antioxidants and nutrients.",
-    price: 49.99,
-    image: "argan-honey.jpg",
-    category: "Specialty Honey",
-    origin: "Souss-Massa",
     weight: "250g",
     inStock: true,
-    rating: 4.9,
-    reviews: 67
-  },
-  {
-    id: "4",
-    name: "Acacia Honey",
-    description: "Light and delicate honey with a smooth texture. Perfect for everyday use.",
-    price: 24.99,
-    image: "acacia-honey.jpg",
-    category: "Honey",
-    origin: "Rif Mountains",
-    weight: "1kg",
-    inStock: true,
-    rating: 4.6,
-    reviews: 201
-  },
-  {
-    id: "5",
-    name: "Lavender Honey",
-    description: "Aromatic honey with a subtle lavender flavor. Great for tea and desserts.",
-    price: 32.99,
-    image: "lavender-honey.jpg",
-    category: "Flower Honey",
-    origin: "Southern Morocco",
-    weight: "500g",
-    inStock: true,
-    rating: 4.8,
-    reviews: 156
+    rating: 4.7,
+    reviews: 85
   }
 ];
+
+// Helper function to get a product by ID
+export function getProductById(id: string): Product | undefined {
+  return products.find(product => product.id === id);
+}
+
+// Generate static paths for Next.js
+export function generateStaticParams() {
+  return products.map((product) => ({
+    id: product.id,
+  }));
+}
